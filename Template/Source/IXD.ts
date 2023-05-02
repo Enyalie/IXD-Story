@@ -99,6 +99,21 @@ namespace Template {
                 break;
         }
         await ƒS.Speech.tell(characters.Ira, "the Music of howling winds");
+        let IXDPrototypeStep6 = await ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
+        switch (IXDPrototypeStep6) {
+            case IXDPrototype.iPickleft:
+                await ƒS.update();
+                await ƒS.Character.show(characters.Ira, characters.Ira.pose.normal, ƒS.positionPercent(30,100));
+                await ƒS.update();
+                await ƒS.Character.hide(characters.Ira);
+                break;
+            case IXDPrototype.iPickright:
+                await ƒS.update();
+                await ƒS.Character.show(characters.Ira, characters.Ira.pose.right, ƒS.positionPercent(70,100));
+                await ƒS.update();
+                await ƒS.Character.hide(characters.Ira);
+                break;
+        }
         await ƒS.Speech.tell(characters.Ira, "End of Prototype");
 
 

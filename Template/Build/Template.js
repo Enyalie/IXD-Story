@@ -96,6 +96,21 @@ var Template;
                 break;
         }
         await Template.ƒS.Speech.tell(Template.characters.Ira, "the Music of howling winds");
+        let IXDPrototypeStep6 = await Template.ƒS.Menu.getInput(IXDPrototype, "choicesCSSClass");
+        switch (IXDPrototypeStep6) {
+            case IXDPrototype.iPickleft:
+                await Template.ƒS.update();
+                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.normal, Template.ƒS.positionPercent(30, 100));
+                await Template.ƒS.update();
+                await Template.ƒS.Character.hide(Template.characters.Ira);
+                break;
+            case IXDPrototype.iPickright:
+                await Template.ƒS.update();
+                await Template.ƒS.Character.show(Template.characters.Ira, Template.characters.Ira.pose.right, Template.ƒS.positionPercent(70, 100));
+                await Template.ƒS.update();
+                await Template.ƒS.Character.hide(Template.characters.Ira);
+                break;
+        }
         await Template.ƒS.Speech.tell(Template.characters.Ira, "End of Prototype");
     }
     Template.IXDPrototype = IXDPrototype;
