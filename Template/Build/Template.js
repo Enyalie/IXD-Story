@@ -227,7 +227,7 @@ var Template;
             origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 normal: "Images/Charakter/DancingIraleft.PNG",
-                right: "Images/Charakter/dancingIraright.PNG"
+                right: "Images/Charakter/DancingIraright.PNG"
             }
         }
     };
